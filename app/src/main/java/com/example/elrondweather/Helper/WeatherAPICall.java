@@ -32,9 +32,6 @@ public class WeatherAPICall {
 
     public WeatherAPICall(){
         options = new LinkedHashMap<>();
-
-
-
     }
     public void setUnits(String units){
         options.put(UNITS, units);
@@ -88,36 +85,4 @@ public class WeatherAPICall {
 
         return throwable;
     }
-//
-       // //Here we will initiate AsyncTaskLoader and handle task in background
-       // Void res = null;
-       // try {
-       //     URL url = new URL("https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&" + "&units=metric" + "&appid=8e33ed387f59ba576a91cb7859e8366e");
-//
-       //     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-//
-       //     BufferedReader reader =
-       //             new BufferedReader(new InputStreamReader(connection.getInputStream()));
-//
-       //     StringBuffer json = new StringBuffer(1024);
-       //     String tmp = "";
-//
-       //     while ((tmp = reader.readLine()) != null)
-       //         json.append(tmp).append("\n");
-       //     reader.close();
-//
-       //     data = new JSONObject(json.toString());
-//
-       //     if (data.getInt("cod") != 200) {
-       //         System.out.println("Cancelled");
-       //     }
-       // } catch (Exception e) {
-//
-       //     System.out.println("Exception " + e.getMessage());
-       // }
-       // return null;
-
-
-
-
 }

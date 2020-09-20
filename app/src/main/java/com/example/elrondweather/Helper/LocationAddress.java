@@ -21,7 +21,7 @@ public class LocationAddress {
     static String result = null;
     public static void getAddressFromLocation(final double latitude, final double longitude,
                                               final Context context) {
-        TextView textView = ((Activity) context).findViewById(R.id.locationName);
+        TextView textView = ((Activity) context).findViewById(R.id.dayText);
         Thread thread = new Thread() {
             @Override
             protected void finalize() throws Throwable {
@@ -69,8 +69,6 @@ public class LocationAddress {
                         bundle.putString("address", result);
                         message.setData(bundle);
                    }
-                    //message.sendToTarget();
-
                 }
             }
         };
