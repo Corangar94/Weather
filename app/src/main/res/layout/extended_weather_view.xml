@@ -26,7 +26,7 @@
             app:srcCompat="@drawable/shape_1" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/temperature"
             android:layout_width="wrap_content"
             android:layout_height="31dp"
             android:layout_below="@+id/imageView2"
@@ -53,7 +53,7 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/rainChance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView"
@@ -66,7 +66,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView14"
+            android:layout_below="@+id/rainChance"
             android:layout_alignStart="@+id/textView"
             android:layout_alignEnd="@+id/textView"
             android:layout_marginStart="1dp"
@@ -76,7 +76,7 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/windSpeed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView2"
@@ -96,7 +96,7 @@
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/sunset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView12"
@@ -109,8 +109,8 @@
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/textView7"
-            android:layout_alignEnd="@+id/textView7"
+            android:layout_alignStart="@+id/uvIndex"
+            android:layout_alignEnd="@+id/uvIndex"
             android:layout_alignParentTop="true"
             android:layout_marginTop="311dp"
             android:layout_marginEnd="0dp"
@@ -121,7 +121,7 @@
             android:id="@+id/textView8"
             android:layout_width="113dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView5"
+            android:layout_below="@+id/humidity"
             android:layout_alignStart="@+id/textView4"
             android:layout_alignEnd="@+id/textView4"
             android:layout_marginTop="125dp"
@@ -129,7 +129,7 @@
             android:textSize="30sp" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/sunrise"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView8"
@@ -141,7 +141,7 @@
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/uvIndex"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView4"
@@ -175,7 +175,7 @@
             android:textSize="30sp" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/humidity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView4"

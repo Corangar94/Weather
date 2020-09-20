@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <com.example.elrondweather.View.WeatherItemView
-        android:id="@+id/WeatherView"
+        android:id="@+id/weatherView"
         android:layout_width="413dp"
         android:layout_height="228dp"
         android:background="@color/whiteGrey"
@@ -34,7 +34,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WeatherView"
+        app:layout_constraintTop_toBottomOf="@+id/weatherView"
         app:layout_constraintVertical_bias="0.57">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -45,25 +45,25 @@
             android:orientation="horizontal">
 
             <com.example.elrondweather.View.WeatherDailyView
-                android:id="@+id/weatherDailyView"
+                android:id="@+id/weatherDailyView2"
                 android:layout_width="143dp"
                 android:layout_height="match_parent"
                 android:baselineAligned="false"
                 android:foregroundGravity="center_vertical|center|center_horizontal"
-                app:layout_constraintBottom_toBottomOf="@+id/weatherDailyView2"
+                app:layout_constraintBottom_toBottomOf="@+id/weatherDailyView1"
                 app:layout_constraintEnd_toStartOf="@+id/weatherDailyView3"
-                app:layout_constraintStart_toEndOf="@+id/weatherDailyView2"
-                app:layout_constraintTop_toTopOf="@+id/weatherDailyView2">
+                app:layout_constraintStart_toEndOf="@+id/weatherDailyView1"
+                app:layout_constraintTop_toTopOf="@+id/weatherDailyView1">
 
             </com.example.elrondweather.View.WeatherDailyView>
 
             <com.example.elrondweather.View.WeatherDailyView
-                android:id="@+id/weatherDailyView2"
-                android:layout_width="147dp"
+                android:id="@+id/weatherDailyView1"
+                android:layout_width="143dp"
                 android:layout_height="match_parent"
                 android:foregroundGravity="center_vertical|center|center_horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/weatherDailyView"
+                app:layout_constraintEnd_toStartOf="@+id/weatherDailyView2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -74,10 +74,10 @@
                 android:layout_width="143dp"
                 android:layout_height="match_parent"
                 android:foregroundGravity="center_vertical|center|center_horizontal"
-                app:layout_constraintBottom_toBottomOf="@+id/weatherDailyView"
+                app:layout_constraintBottom_toBottomOf="@+id/weatherDailyView2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@+id/weatherDailyView"
+                app:layout_constraintStart_toEndOf="@+id/weatherDailyView2"
                 app:layout_constraintTop_toTopOf="parent">
 
             </com.example.elrondweather.View.WeatherDailyView>
@@ -121,7 +121,7 @@
             <com.example.elrondweather.View.WeatherDailyView
                 android:id="@+id/weatherDailyView5"
                 android:layout_width="143dp"
-                android:layout_height="267dp"
+                android:layout_height="match_parent"
                 android:baselineAligned="false"
                 android:foregroundGravity="center_vertical|center|center_horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"

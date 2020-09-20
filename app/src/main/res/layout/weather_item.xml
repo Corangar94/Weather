@@ -10,8 +10,17 @@
     android:outlineSpotShadowColor="#00E3E3E3">
 
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:id="@+id/locationName"
+        android:id="@+id/dayText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="87dp"
@@ -66,7 +75,7 @@
         app:layout_constraintVertical_bias="0.01999998" />
 
     <ImageView
-        android:id="@+id/imageView16"
+        android:id="@+id/icon"
         android:layout_width="70dp"
         android:layout_height="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -110,9 +119,9 @@
         android:text="Rain Chance"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView16"
-        app:layout_constraintStart_toStartOf="@+id/imageView16"
-        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+        app:layout_constraintEnd_toEndOf="@+id/icon"
+        app:layout_constraintStart_toStartOf="@+id/icon"
+        app:layout_constraintTop_toBottomOf="@+id/icon"
         app:layout_constraintVertical_bias="0.050000012" />
 
     <TextView
@@ -123,8 +132,8 @@
         android:text="50%"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView16"
-        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintEnd_toEndOf="@+id/icon"
+        app:layout_constraintStart_toStartOf="@+id/icon"
         app:layout_constraintTop_toBottomOf="@+id/rain"
         app:layout_constraintVertical_bias="0.0" />
 
