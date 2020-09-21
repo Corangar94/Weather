@@ -11,13 +11,10 @@ import com.example.elrondweather.Helper.WeatherClasses.JsonToJava.Weather;
 import com.example.elrondweather.Helper.WeatherClasses.WeatherForecast;
 import com.example.elrondweather.View.WeatherDailyView;
 import com.example.elrondweather.View.WeatherItemView;
-import com.kwabenaberko.openweathermaplib.models.threehourforecast.ThreeHourForecast;
-
 
 public class MainActivity extends AppCompatActivity {
     SplashScreen splashScreen;
     Context context;
-    static ThreeHourForecast forecast;
     Weather weather;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
