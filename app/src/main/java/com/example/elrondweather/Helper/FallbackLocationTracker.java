@@ -80,17 +80,15 @@ public class FallbackLocationTracker  implements LocationTracker, LocationTracke
     public void onUpdate(Location oldLoc, long oldTime, Location newLoc, long newTime) {
         boolean update = false;
 
-        //We should update only if there is no last location, the provider is the same, or the provider is more accurate, or the old location is stale
-        if(lastLoc == null){
+        //We should update only if there is no last location, the provider is the same, or the provider is more accurate,
+        // or the old location is stale
+        if (lastLoc == null) {
             update = true;
-        }
-        else if(lastLoc != null && lastLoc.getProvider().equals(newLoc.getProvider())){
+        } else if (lastLoc != null && lastLoc.getProvider().equals(newLoc.getProvider())) {
             update = true;
-        }
-        else if(newLoc.getProvider().equals(LocationManager.GPS_PROVIDER)){
+        } else if (newLoc.getProvider().equals(LocationManager.GPS_PROVIDER)) {
             update = true;
-        }
-        else if (newTime - lastTime > 5 * 60 * 1000){
+        } else if (newTime - lastTime > 5 * 60 * 1000) {
             update = true;
         }
 

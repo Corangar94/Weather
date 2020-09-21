@@ -30,9 +30,9 @@ public class ExtendedWeatherView extends AppCompatActivity {
         sunset = findViewById(R.id.sunset);
 
         temperature.setText(String.valueOf(Math.round(weather.getDaily().get(index).getTemp().getDay())));
-        rainChance.setText(String.valueOf(Math.round(weather.getDaily().get(index).getPop())));
+        rainChance.setText((Math.round(weather.getDaily().get(index).getPop()) + "%"));
         windSpeed.setText(String.valueOf(Math.round(weather.getDaily().get(index).getWindSpeed())));
-        humidity.setText(String.valueOf(Math.round(weather.getDaily().get(index).getHumidity())));
+        humidity.setText((Math.round(weather.getDaily().get(index).getHumidity()) + "%"));
         uvIndex.setText(String.valueOf(Math.round(weather.getDaily().get(index).getUvi())));
         sunrise.setText(String.valueOf((weather.getDaily().get(index).getSunrise())));
         sunset.setText(String.valueOf((weather.getDaily().get(index).getSunset())));

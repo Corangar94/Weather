@@ -27,7 +27,6 @@ public class LocationAddress {
             protected void finalize() throws Throwable {
                 super.finalize();
                 CurrentLocation.setLocationName(result);
-                textView.setText(result);
             }
 
             @Override
@@ -52,15 +51,11 @@ public class LocationAddress {
                     if (result != null) {
                         message.what = 1;
                         Bundle bundle = new Bundle();
-                        //result = "Latitude: " + latitude + " Longitude: " + longitude +
-                        //       "\n\nAddress:\n" + result;
                         bundle.putString("address", result);
                         CurrentLocation.setLocationName(result);
                         if(textView!=null)
                         textView.setText(result);
-
                         message.setData(bundle);
-
                     } else {
                         message.what = 1;
                         Bundle bundle = new Bundle();

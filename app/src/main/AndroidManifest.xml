@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"/>
-        <service android:name=".Helper.AppLocationService" />
+        <activity android:name=".View.ExtendedWeatherView" />
     </application>
 
 </manifest>

@@ -49,9 +49,9 @@ public class WeatherItemView extends CardView implements View.OnClickListener{
 
     public void setWeatherItem(Weather weather){
         location.setText(CurrentLocation.getLocationName());
-        rainChance.setText(String.valueOf(Math.round(weather.getDaily().get(0).getPop())));
+        rainChance.setText((Math.round(weather.getDaily().get(0).getPop()) + "%"));
         temperature.setText(String.valueOf(Math.round(weather.getDaily().get(0).getTemp().getDay())));
-        humidity.setText(String.valueOf(Math.round(weather.getDaily().get(0).getHumidity())));
+        humidity.setText((Math.round(weather.getDaily().get(0).getHumidity()) + "%"));
         View view = findViewById(R.id.view);
         view.setOnClickListener(onClick);
     }
